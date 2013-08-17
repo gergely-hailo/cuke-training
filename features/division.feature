@@ -1,4 +1,4 @@
-Feature: Adding
+Feature: Division
 
 	Scenario Outline: Divide two numbers
 		Given the input "<input>"
