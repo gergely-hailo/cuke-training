@@ -8,5 +8,7 @@ When /^the calculator is run$/ do
 end
 
 Then /^the output should be "([^"]*)"$/ do |expected_output|
-	@output == expected_output
+	if @output != expected_output
+		raise "Error: expected #{expected_output}, got #{@output} instead"
+	end
 end
